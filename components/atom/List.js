@@ -35,7 +35,7 @@ export default function List() {
           gap: 1rem;
         }
         .cardContainer {
-          width: 20rem;
+          width: clamp(16rem, 80vw, 25rem);
           border: 1px solid gray;
           padding: 1rem;
           border-radius: 0.3rem;
