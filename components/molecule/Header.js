@@ -1,5 +1,6 @@
 import { styles } from "@/public/js/styles";
 import { useEffect, useState } from "react";
+import NavBar from "./NavBar";
 
 export default function Header() {
   const [started, setStarted] = useState(false);
@@ -14,6 +15,7 @@ export default function Header() {
           <img className="imgSize" src="/img/logo.png" alt="" />
         </div>
       </div>
+      <NavBar />
       <style jsx>{`
         .headerContainer {
           padding: 1rem;

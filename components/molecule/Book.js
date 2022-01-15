@@ -2,7 +2,7 @@ import { styles } from "@/public/js/styles";
 import List from "../atom/List";
 import { asrar } from "@/public/js/data";
 
-export default function Book() {
+export default function Book({ book }) {
   return (
     <>
       <div className="bookPageContainer">
