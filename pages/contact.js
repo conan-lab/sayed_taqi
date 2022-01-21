@@ -1,4 +1,5 @@
 import Header from "@/components/molecule/Header";
+import { styles } from "@/public/js/styles";
 
 export default function About() {
   return (
@@ -10,7 +11,7 @@ export default function About() {
       </div>
       <style jsx>{`
         .line {
-          border-top: 3px solid brown;
+          border-top: 3px solid ${styles.primaryColor};
           width: 6rem;
           padding: 0.5rem;
         }

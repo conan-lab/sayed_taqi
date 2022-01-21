@@ -16,16 +16,21 @@ export default function NavBar() {
       </div>
       <style jsx>{`
         .NavBar {
-          border: solid gray;
-          border-width: 1px 0px;
+          border-bottom: 1px solid gray;
+          border-top: 1px solid gray;
           ${styles.flex};
           ${styles.flexBothcenter};
           gap: 1rem;
+          height: 2.6rem;
           font-size: 1.1rem;
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
           cursor: pointer;
         }
         .NavItem:hover {
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
           font-size: 1.2rem;
         }

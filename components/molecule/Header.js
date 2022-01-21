@@ -1,6 +1,7 @@
 import { styles } from "@/public/js/styles";
 import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
+import Hexagon from "@/public/img/Hexagon";
 
 export default function Header() {
   const [started, setStarted] = useState(false);
@@ -14,18 +15,29 @@ export default function Header() {
         <div className="imgSize">
           <img className="imgSize" src="/img/logo.png" alt="" />
         </div>
+        <div className="bground">
+          <Hexagon />
+        </div>
       </div>
       <NavBar />
       <style jsx>{`
         .headerContainer {
           padding: 1rem;
+          ${started ? "height: 16rem;" : "height: 0rem;"};
+          border-bottom: 5px solid lightgray;
           ${styles.flex};
           ${styles.flexBothcenter};
           overflow: hidden;
           transition: all 1s ease-in-out;
           ${started
-            ? "transform: translateY(0)"
+            ? "transform: translateY(0);"
             : "transform: translateY(-10rem)"};
+        }
+        .bground {
+          position: absolute;
+          z-index: -1;
+          opacity: 0.08;
+          width: 100%;
         }
         .imgSize {
           width: clamp(12rem, 40vw, 16rem);
