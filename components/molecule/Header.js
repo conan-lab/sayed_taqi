@@ -23,7 +23,7 @@ export default function Header() {
       <style jsx>{`
         .headerContainer {
           padding: 1rem;
-          ${started ? "height: 16rem;" : "height: 0rem;"};
+          ${started ? "min-height: 16rem;" : "min-height: 0rem;"};
           border-bottom: 5px solid lightgray;
           ${styles.flex};
           ${styles.flexBothcenter};
@@ -40,6 +40,8 @@ export default function Header() {
           width: 100%;
         }
         .imgSize {
+          background: white;
+          padding: 0.2rem;
           width: clamp(12rem, 40vw, 16rem);
         }
       `}</style>
