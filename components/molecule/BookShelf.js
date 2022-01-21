@@ -78,7 +78,7 @@ export default function BookShelf() {
         }
         .bookShelf {
           display: grid;
-          grid-template-columns: repeat(auto-fit, clamp(10rem, 30vw, 14vw));
+          grid-template-columns: repeat(auto-fit, clamp(10rem, 40vw, 11rem));
           justify-content: center;
           gap: 2.6rem 1rem;
           align-self: center;
