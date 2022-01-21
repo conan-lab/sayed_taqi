@@ -78,13 +78,14 @@ export default function BookShelf() {
         }
         .bookShelf {
           display: grid;
-          grid-template-columns: repeat(auto-fit, 10rem);
+          grid-template-columns: repeat(auto-fit, clamp(10rem, 30vw, 14vw));
           justify-content: center;
           gap: 2.6rem 1rem;
           align-self: center;
           padding: 2rem 0rem;
         }
         .shelf {
+          background: white;
           height: 1rem;
           padding: 0rem 2rem;
           box-shadow: 0px 6px 6px 2px gray;
@@ -109,12 +110,11 @@ export default function BookShelf() {
           ${styles.justifyBetween};
           padding: 2rem 1rem;
           gap: 1rem;
-          height: 11.5rem;
-          min-height: 11.5rem;
-          min-width: 8rem;
-          width: 8rem;
+          height: clamp(12rem, 35vw, 14rem);
+          min-height: clamp(12rem, 35vw, 14rem);
+          width: clamp(8rem, 30vw, 10rem);
           border-radius: 0 0.6rem 0.6rem 0;
-          font-size: 1.2rem;
+          font-size: clamp(1.2rem, 4vw, 1.6rem);
           text-align: center;
           cursor: pointer;
           overflow: hidden;

@@ -16,8 +16,10 @@ export default function About() {
           padding: 0.5rem;
         }
         .contactContainer {
-          padding: 2rem 1.6rem;
+          padding: 10vw 1.6rem;
           font-size: 1.2rem;
+          max-width: 60rem;
+          margin: auto;
         }
       `}</style>
     </>

@@ -21,8 +21,8 @@ export default function NavBar() {
           ${styles.flex};
           ${styles.flexBothcenter};
           gap: 1rem;
-          height: 2.6rem;
-          font-size: 1.1rem;
+          height: 2.8rem;
+          font-size: 1.2rem;
           -webkit-transition: all 0.3s ease-in-out;
           -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;

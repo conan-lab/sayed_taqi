@@ -46,16 +46,18 @@ export default function About() {
           padding: 0.5rem;
         }
         .aboutContainer {
-          padding: 2rem 1.6rem;
+          padding: 10vw 1.6rem;
           font-size: 1.2rem;
+          max-width: 60rem;
+          margin: auto;
         }
         .flower {
           position: fixed;
-          bottom: -2rem;
+          bottom: -6rem;
           left: -2rem;
           z-index: -1;
           opacity: 0.1;
-          width: max(30vw, 16rem);
+          width: max(25vw, 14rem);
           -ms-scroll-chaining: auto;
           overscroll-behavior: auto;
         }
