@@ -8,9 +8,9 @@ export default function BookShelf() {
   return (
     <>
       <div className="shelfContainer">
-        {/* <div className="shelfImg">
+        <div className="shelfImg">
           <img src="/img/decoration.png" width="100%" alt="" />
-        </div> */}
+        </div>
         <div className="inputContainer">
           <input
             className="searchInput"
