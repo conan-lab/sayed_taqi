@@ -1,22 +1,97 @@
 import { styles } from "@/public/js/styles";
 import List from "../atom/List";
-import { asrar } from "@/public/js/data";
+import { parts, books } from "@/public/js/data";
+import { useState, useEffect } from "react";
 
 export default function Book({ book }) {
+  const [bookName, setBookName] = useState("");
+
+  useEffect(() => {
+    setBookName(books.filter((cbook) => cbook.link === book)[0]?.name);
+  }, [book]);
+
   return (
     <>
       <div className="bookPageContainer">
-        <div className="bookParts">
-          عدد الأجزاء <span>{asrar.length}</span>
+        <div className="bookContainer">
+          <div className="bookTitle">كتاب : {bookName}</div>
+          <div className="book">
+            <div className="bookImg">
+              <img src={`/img/books/${book}.png`} width="100%" alt="" />
+            </div>
+            <div>{bookName}</div>
+          </div>
         </div>
-        <List />
+
+        <div className="bookPartsContainer">
+          <div className="bookParts">
+            عدد الأجزاء{" "}
+            <span>{parts.filter((part) => part.book === book).length}</span>
+          </div>
+          <div>
+            <List bookLink={book} />
+          </div>
+        </div>
       </div>
       <style jsx>{`
         .bookPageContainer {
-          padding: 1rem 0rem;
+          padding: 1rem;
+          max-width: 60rem;
           ${styles.flex};
-          ${styles.flexColumn};
-          ${styles.flexAligncenter};
+          gap: 2rem;
+          min-height: 70vh;
+          flex-wrap: wrap;
+        }
+        .bookContainer {
+          flex: 1 1;
+          ${styles.flex};
+          ${styles.flexColumn}
+          ${styles.flexAligncenter}
+        }
+        .bookTitle {
+          font-size: 1.6rem;
+          padding-top: 2rem;
+          padding-bottom: 4rem;
+        }
+
+        .book {
+          background: white;
+          flex: 0 1;
+          border: 1px solid gray;
+          border-bottom: 3px solid ${styles.primaryColor};
+          border-left: 5px solid ${styles.primaryColor};
+          ${styles.flex};
+          ${styles.flexBothcenter};
+          padding: 0.6rem;
+          gap: 1rem;
+          height: clamp(11rem, 35vw, 14rem);
+          min-height: clamp(11rem, 35vw, 14rem);
+          width: clamp(8rem, 30vw, 10rem);
+          border-radius: 0 0.6rem 0.6rem 0;
+          font-size: clamp(1.2rem, 4vw, 1.6rem);
+          text-align: center;
+          cursor: pointer;
+          overflow: hidden;
+          position: relative;
+        }
+        .book:hover {
+          ${styles.boxshadow}
+        }
+        .bookImg {
+          position: absolute;
+          font-size: 0.8rem;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          color: gray;
+          direction: ltr;
+          overflow: hidden;
+        }
+        .bookPartsContainer {
+          flex: 1 1;
+          ${styles.flex};
+          ${styles.flexColumn}
+          ${styles.flexAligncenter}
         }
         .bookParts {
           padding: 2rem;

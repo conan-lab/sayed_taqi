@@ -1,30 +1,32 @@
 import Link from "next/link";
-import { asrar } from "@/public/js/data";
+import { parts } from "@/public/js/data";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { styles } from "@/public/js/styles";
 
-export default function List() {
+export default function List({ bookLink }) {
   return (
     <>
       <div className="listContainer">
-        {asrar.map((book, i) => (
-          <div key={i} className="cardContainer">
-            <div>
+        {parts
+          .filter((part) => part?.book === bookLink)
+          .map((book, i) => (
+            <div key={i} className="cardContainer">
               <div>
-                <span>الجزء {book.part} : </span>
-                {book.name}
+                <div>
+                  <span>الجزء {book.part} : </span>
+                  {book.name}
+                </div>
+                <div className="bookName">كتاب اسرار النفس البشرية</div>
               </div>
-              <div className="bookName">كتاب اسرار النفس البشرية</div>
+              <a
+                href={`http://taqimusawi.com/books/asrar/Asrar_Alnafs_Albashariah%20part_${book.part}.pdf`}
+              >
+                <div className="icon">
+                  <AiOutlineCloudDownload />
+                </div>
+              </a>
             </div>
-            <Link
-              href={`http://taqimusawi.com/books/asrar/Asrar_Alnafs_Albashariah%20part_${book.part}.pdf`}
-            >
-              <div className="icon">
-                <AiOutlineCloudDownload />
-              </div>
-            </Link>
-          </div>
-        ))}
+          ))}
       </div>
       <style jsx>{`
         .listContainer {
@@ -35,6 +37,7 @@ export default function List() {
           gap: 1rem;
         }
         .cardContainer {
+          background: white;
           width: clamp(16rem, 80vw, 25rem);
           border: 1px solid gray;
           padding: 1rem;
@@ -61,6 +64,7 @@ export default function List() {
           ${styles.flexAligncenter};
           border-radius: 0.2rem;
           padding: 0.3rem;
+          color: black;
         }
         .icon:hover {
           background: ${styles.primaryColor};

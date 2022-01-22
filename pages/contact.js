@@ -4,7 +4,7 @@ import { styles } from "@/public/js/styles";
 export default function About() {
   return (
     <>
-      <Header />
+      <Header active={"contact"} />
       <div className="contactContainer">
         <div className="line"></div>
         <h1>اتصل بنا</h1>

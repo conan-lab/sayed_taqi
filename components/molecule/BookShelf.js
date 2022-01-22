@@ -27,8 +27,14 @@ export default function BookShelf() {
                 <Link href={"/" + book.link}>
                   <div className="book">
                     <>
+                      <div className="bookImg">
+                        <img
+                          src={`/img/books/${book.link}.png`}
+                          width="100%"
+                          alt=""
+                        />
+                      </div>
                       <div>{book.name}</div>
-                      <div className="date">{book.date}</div>
                     </>
                   </div>
                 </Link>
@@ -47,6 +53,7 @@ export default function BookShelf() {
           width: 80%;
           margin: auto;
           padding: 1rem;
+          max-width: 24rem;
         }
         .inputContainer {
           max-width: 80%;
@@ -105,27 +112,31 @@ export default function BookShelf() {
           border-bottom: 3px solid ${styles.primaryColor};
           border-left: 5px solid ${styles.primaryColor};
           ${styles.flex};
-          ${styles.flexColumn};
-          ${styles.flexAlignCenter};
-          ${styles.justifyBetween};
-          padding: 2rem 1rem;
+          ${styles.flexBothcenter};
+          padding: 0.6rem;
           gap: 1rem;
-          height: clamp(12rem, 35vw, 14rem);
-          min-height: clamp(12rem, 35vw, 14rem);
+          height: clamp(11rem, 35vw, 14rem);
+          min-height: clamp(11rem, 35vw, 14rem);
           width: clamp(8rem, 30vw, 10rem);
           border-radius: 0 0.6rem 0.6rem 0;
           font-size: clamp(1.2rem, 4vw, 1.6rem);
           text-align: center;
           cursor: pointer;
           overflow: hidden;
+          position: relative;
         }
         .book:hover {
           ${styles.boxshadow}
         }
-        .date {
+        .bookImg {
+          position: absolute;
           font-size: 0.8rem;
+          top: 0;
+          width: 100%;
+          height: 100%;
           color: gray;
           direction: ltr;
+          overflow: hidden;
         }
       `}</style>
     </>

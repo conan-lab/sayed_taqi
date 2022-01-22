@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import NavBar from "./NavBar";
 import Hexagon from "@/public/img/Hexagon";
 
-export default function Header() {
+export default function Header({ active }) {
   const [started, setStarted] = useState(false);
   useEffect(() => {
     setStarted(true);
@@ -12,27 +12,46 @@ export default function Header() {
   return (
     <>
       <div className="headerContainer">
-        <div className="imgSize">
-          <img className="imgSize" src="/img/logo.png" alt="" />
-        </div>
         <div className="bground">
           <Hexagon />
         </div>
+        <div className="gradiant"></div>
+        <div className="imgSize">
+          <img className="imgSize" src="/img/logo.png" alt="" />
+        </div>
       </div>
-      <NavBar />
+      <NavBar active={active} />
       <style jsx>{`
         .headerContainer {
           padding: 1rem;
-          ${started ? "min-height: 16rem;" : "min-height: 0rem;"};
+          min-height: 14rem;
           ${started ? "opacity: 1;" : "opacity: 0;"};
-          border-bottom: 5px solid ${styles.primaryColor};
           ${styles.flex};
           ${styles.flexBothcenter};
           overflow: hidden;
-          transition: all 1s ease-in-out;
+          -webkit-transition: all 1s 0.5s ease-in-out;
+          -o-transition: all 1s 0.5s ease-in-out;
+          transition: all 1s 0.5s ease-in-out;
           ${started
             ? "transform: translateY(0);"
-            : "transform: translateY(-10rem)"};
+            : "transform: translateY(-10rem);"};
+          position: relative;
+        }
+        .gradiant {
+          position: absolute;
+          min-height: 100%;
+          min-width: 100%;
+          z-index: -1;
+          background: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(#ffffff10),
+            color-stop(white),
+            to(white)
+          );
+          background: -o-linear-gradient(#ffffff10, #ffffffd1, white);
+          background: linear-gradient(#ffffff10, #ffffffd1, white);
         }
         .bground {
           position: absolute;
@@ -41,10 +60,16 @@ export default function Header() {
           width: 100%;
         }
         .imgSize {
-          background: white;
           padding: 0.2rem;
+          padding-top: 1.6rem;
           border-radius: 0.6rem;
           width: clamp(12rem, 40vw, 16rem);
+          -webkit-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
+          ${started
+            ? "transform: translateY(0);"
+            : "transform: translateY(-20rem);"};
         }
       `}</style>
     </>

@@ -1,6 +1,5 @@
 import Header from "@/components/molecule/Header";
 import { styles } from "@/public/js/styles";
-import Flower from "@/public/img/Flower";
 
 const pargraphs = [
   "تقي بن حسين الموسوي عماني وقد ولد في زنجبار شرق أفريقيا في عام 1936 ميلادي. وفي 1939 في بداية الحرب العالمية الثانية جاء الى مسقط في سلطنة عمان.",
@@ -22,7 +21,7 @@ const pargraphs = [
 export default function About() {
   return (
     <>
-      <Header />
+      <Header active={"about"} />
       <div className="aboutContainer">
         <div className="line"></div>
         <h1>عن المؤلف</h1>
@@ -34,9 +33,6 @@ export default function About() {
               {p}
             </div>
           ))}
-        </div>
-        <div className="flower">
-          <Flower />
         </div>
       </div>
       <style jsx>{`
@@ -51,16 +47,7 @@ export default function About() {
           max-width: 60rem;
           margin: auto;
         }
-        .flower {
-          position: fixed;
-          bottom: -6rem;
-          left: -2rem;
-          z-index: -1;
-          opacity: 0.1;
-          width: max(25vw, 14rem);
-          -ms-scroll-chaining: auto;
-          overscroll-behavior: auto;
-        }
+
         .tcenter {
           text-align: center;
           padding: 1rem 0rem;
