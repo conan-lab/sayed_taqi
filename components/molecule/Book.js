@@ -1,13 +1,16 @@
 import { styles } from "@/public/js/styles";
 import List from "../atom/List";
 import { parts, books } from "@/public/js/data";
+import { AiOutlineCloudDownload } from "react-icons/ai";
 import { useState, useEffect } from "react";
 
 export default function Book({ book }) {
   const [bookName, setBookName] = useState("");
+  const [partsCount, setPartsCount] = useState(1);
 
   useEffect(() => {
     setBookName(books.filter((cbook) => cbook.link === book)[0]?.name);
+    setPartsCount(parts.filter((part) => part.book === book).length || 1);
   }, [book]);
 
   return (
@@ -25,12 +28,22 @@ export default function Book({ book }) {
 
         <div className="bookPartsContainer">
           <div className="bookParts">
-            عدد الأجزاء{" "}
-            <span>{parts.filter((part) => part.book === book).length}</span>
+            عدد الأجزاء <span>{partsCount}</span>
           </div>
-          <div>
-            <List bookLink={book} />
-          </div>
+          {partsCount === 1 ? (
+            <div className="downloadBook">
+              <div>حمل الكتاب</div>
+              <a href={book.url}>
+                <div className="icon">
+                  <AiOutlineCloudDownload />
+                </div>
+              </a>
+            </div>
+          ) : (
+            <div>
+              <List bookLink={book} />
+            </div>
+          )}
         </div>
       </div>
       <style jsx>{`
@@ -95,6 +108,33 @@ export default function Book({ book }) {
         }
         .bookParts {
           padding: 2rem;
+        }
+        .downloadBook {
+          background: white;
+          width: clamp(10rem, 50vw, 16rem);
+          border: 1px solid gray;
+          padding: 0.3rem 1rem;
+          border-radius: 0.3rem;
+          ${styles.flex};
+          ${styles.justifyBetween};
+          ${styles.flexAligncenter};
+          font-size: 1.2rem;
+          gap: 0.6rem;
+          border-left: 3px solid ${styles.primaryColor};
+        }
+        .icon {
+          font-size: 1.2rem;
+          cursor: pointer;
+          ${styles.flex};
+          ${styles.justifyBetween};
+          ${styles.flexAligncenter};
+          border-radius: 0.2rem;
+          padding: 0.3rem;
+          color: black;
+        }
+        .icon:hover {
+          background: ${styles.primaryColor};
+          color: white;
         }
       `}</style>
     </>

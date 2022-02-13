@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { parts } from "@/public/js/data";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { styles } from "@/public/js/styles";
@@ -18,9 +17,7 @@ export default function List({ bookLink }) {
                 </div>
                 <div className="bookName">كتاب اسرار النفس البشرية</div>
               </div>
-              <a
-                href={`http://taqimusawi.com/books/asrar/Asrar_Alnafs_Albashariah%20part_${book.part}.pdf`}
-              >
+              <a href={book.url}>
                 <div className="icon">
                   <AiOutlineCloudDownload />
                 </div>

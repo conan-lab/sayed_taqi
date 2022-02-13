@@ -41,6 +41,7 @@ export default function NavBar({ active }) {
           -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
           font-size: clamp(1.4rem, 5vw, 1.8rem);
+          color: black;
         }
         .active {
           color: ${styles.primaryColor};
