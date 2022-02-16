@@ -2,92 +2,92 @@ export const books = [
   { name: "أسرار النفس البشرية", link: "asrar", url: "" },
   {
     name: "القوى الكونية",
-    ink: "alqwaAlKawnia",
+    link: "alqwaAlKawnia",
     rl: "http://taqimusawi.com/books/33-Alqewa_Alkawneya.pdf"
   },
   { name: "المكتشفون العظام", link: "alMoktashifonAletham", url: "" },
   {
     name: "هكذا تكلم الله على لسان داود",
-    ink: "hakathaTakalamAllah",
+    link: "hakathaTakalamAllah",
     rl:
       "http://taqimusawi.com/books/17-Hakatha_takalm_allah_ala_lesan_david.pdf"
   },
   {
     name: "بوذا ونور الملكوت",
-    ink: "KetabBotha",
+    link: "KetabBotha",
     rl: "http://taqimusawi.com/books/18-buddah_wa_nour_almalakout.pdf"
   },
   {
     name: "ورفعناه مكانًا عليًّا",
-    ink: "wRafaanah",
+    link: "wRafaanah",
     rl: "http://taqimusawi.com/books/19-Wrafaanahu_Makanaa_Aleeaa.pdf"
   },
   {
     name: "هكذا تكلم جعفر الصادق عليه السلام",
-    ink: "hakathaTakalamJaafar",
+    link: "hakathaTakalamJaafar",
     rl: "http://taqimusawi.com/books/13-Hakatha_takalama_Jafar_AlSadiq.pdf"
   },
   {
     name: "المباني الأساسية للطريقة الأويسية",
-    ink: "alMabaniAlAsyawia",
+    link: "alMabaniAlAsyawia",
     rl:
       "http://taqimusawi.com/books/14-almabani_alasasyah_le_altariqah_alowisyah.pdf"
   },
   {
     name: "هكذا ناجى داود ربه",
-    ink: "hakthaNajiDawod",
+    link: "hakthaNajiDawod",
     rl: "http://taqimusawi.com/books/16-Hakatha_Naja_David-Rabahou.pdf"
   },
   {
     name: "وحدة الإرادة في الوجود",
-    ink: "wehdatAlErada",
+    link: "wehdatAlErada",
     rl: "http://taqimusawi.com/books/08-we7dah_alwojood.pdf"
   },
   {
     name: "Cosmos Revealing Unified Will",
-    ink: "cosmos",
+    link: "cosmos",
     rl: "http://taqimusawi.com/books/05-Cosmos_Revealing_Unified_Will.rar"
   },
   {
     name: "هكذا تكلم عيسى عليه السلام",
-    ink: "hakathaTakalamEsa",
+    link: "hakathaTakalamEsa",
     rl: "http://taqimusawi.com/books/12-hakatha_takalma_easa.pdf"
   },
   {
     name: "قدوة العارفين",
-    ink: "qdwatAlArefin",
+    link: "qdwatAlArefin",
     rl: "http://taqimusawi.com/books/09-qudwah_alfoqha2_ara.pdf"
   },
   {
     name: "قدوة الفقهاء والعارفين",
-    ink: "qdwatAlFoqahaa",
+    link: "qdwatAlFoqahaa",
     rl: "http://taqimusawi.com/books/02-qudwah_al3arfeen.rar"
   },
   {
     name: "ما هو سر الحياة",
-    ink: "maHowaSer",
+    link: "maHowaSer",
     rl: "http://taqimusawi.com/books/04-ma_howa_ser_al7ayat.rar"
   },
   {
     name: "ألف باء العرفان",
-    ink: "alfBaa",
+    link: "alfBaa",
     rl: "http://taqimusawi.com/books/01-alfba2.rar"
   },
   {
     name: "خمسة من العرفاء",
-    ink: "khamsa",
+    link: "khamsa",
     rl: "http://taqimusawi.com/books/06-khamsah_mn_al3orafa2v2.pdf"
   },
   {
     name: "العلاجات الطبيعية في الأعشاب السحرية",
-    ink: "alelajAltabiee",
+    link: "alelajAltabiee",
     rl: "http://taqimusawi.com/books/10-al2a3shab.pdf"
   },
   { name: "قدوة العارفين بالفارسي", link: "qdwatAlArefin", url: "" },
   { name: "قدوة الفقهاء والعارفين – فارسي", link: "qdwatAlFoqahaa", url: "" },
   {
     name: "السموات السبع",
-    ink: "alsamawat",
+    link: "alsamawat",
     rl: "http://taqimusawi.com/books/03-alsamawat_alsab3.rar"
   }
 ];
