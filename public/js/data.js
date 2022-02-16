@@ -1,11 +1,11 @@
 export const books = [
-  { name: "أسرار النفس البشرية", link: "asrar" },
+  { name: "أسرار النفس البشرية", link: "asrar", url: "" },
   {
     name: "القوى الكونية",
     link: "alqwaAlKawnia",
     url: "http://taqimusawi.com/books/33-Alqewa_Alkawneya.pdf"
   },
-  { name: "المكتشفون العظام", link: "alMoktashifonAletham" },
+  { name: "المكتشفون العظام", link: "alMoktashifonAletham", url: "" },
   {
     name: "هكذا تكلم الله على لسان داود",
     link: "hakathaTakalamAllah",
@@ -83,8 +83,8 @@ export const books = [
     link: "alelajAltabiee",
     url: "http://taqimusawi.com/books/10-al2a3shab.pdf"
   },
-  { name: "قدوة العارفين بالفارسي", link: "qdwatAlArefin" },
-  { name: "قدوة الفقهاء والعارفين – فارسي", link: "qdwatAlFoqahaa" },
+  { name: "قدوة العارفين بالفارسي", link: "qdwatAlArefin", url: "" },
+  { name: "قدوة الفقهاء والعارفين – فارسي", link: "qdwatAlFoqahaa", url: "" },
   {
     name: "السموات السبع",
     link: "alsamawat",
