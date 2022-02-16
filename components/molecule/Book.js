@@ -33,7 +33,7 @@ export default function Book({ book }) {
           {partsCount === 1 ? (
             <div className="downloadBook">
               <div>حمل الكتاب</div>
-              <a href={book?.url && book?.url}>
+              <a href={book?.url || ""}>
                 <div className="icon">
                   <AiOutlineCloudDownload />
                 </div>

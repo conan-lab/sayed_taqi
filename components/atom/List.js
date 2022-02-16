@@ -17,7 +17,7 @@ export default function List({ bookLink, bookName }) {
                 </div>
                 <div className="bookName">{bookName}</div>
               </div>
-              <a href={book?.url && book?.url}>
+              <a href={book?.url || ""}>
                 <div className="icon">
                   <AiOutlineCloudDownload />
                 </div>
