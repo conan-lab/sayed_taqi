@@ -200,7 +200,7 @@ export const parts = [
       "http://taqimusawi.com/books/asrar/Asrar_Alnafs_Albashariah%20part_10.pdf"
   },
   {
-    name: "إن لم تكن في يتين فلا علم لك",
+    name: "إن لم تكن في يقين وشهود فلا علم لك",
     part: "11",
     book: "asrar",
     url:
@@ -228,7 +228,7 @@ export const parts = [
       "http://taqimusawi.com/books/asrar/Asrar_Alnafs_Albashariah%20part_14.pdf"
   },
   {
-    name: "الأنبياء مساكين الروح",
+    name: "الانبياء مساكين الروح غير جبارين",
     part: "15",
     book: "asrar",
     url:
@@ -669,7 +669,7 @@ export const parts = [
       "http://taqimusawi.com/books/asrar/Asrar_Alnafs_Albashariah%20part_77.pdf"
   },
   {
-    name: "الشاب العاصي يتوب الى الله",
+    name: "الشاب العاصي الذي تاب الى الله وكيف أفلح",
     part: "78",
     book: "asrar",
     url:
@@ -802,7 +802,7 @@ export const parts = [
       "http://taqimusawi.com/books/asrar/Asrar_Alnafs_Albashariah%20part_96.pdf"
   },
   {
-    name: "كنوزك حيث قلبك فليكن قلبك مع الله الواحد الصمد",
+    name: "كنوزك حيث قلبك فليكن قلبك مع الله الواحد الأحد الصمد",
     part: "97",
     book: "asrar",
     url:
