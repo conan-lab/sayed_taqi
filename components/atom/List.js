@@ -2,7 +2,7 @@ import { parts } from "@/public/js/data";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { styles } from "@/public/js/styles";
 
-export default function List({ bookLink }) {
+export default function List({ bookLink, bookName }) {
   return (
     <>
       <div className="listContainer">
@@ -15,9 +15,9 @@ export default function List({ bookLink }) {
                   <span>الجزء {book.part} : </span>
                   {book.name}
                 </div>
-                <div className="bookName">كتاب اسرار النفس البشرية</div>
+                <div className="bookName">{bookName}</div>
               </div>
-              <a href={book.url}>
+              <a href={book?.url && book?.url}>
                 <div className="icon">
                   <AiOutlineCloudDownload />
                 </div>

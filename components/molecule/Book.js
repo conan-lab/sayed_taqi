@@ -41,7 +41,7 @@ export default function Book({ book }) {
             </div>
           ) : (
             <div>
-              <List bookLink={book} />
+              <List bookLink={book} bookName={bookName} />
             </div>
           )}
         </div>
