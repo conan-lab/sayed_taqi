@@ -3,130 +3,130 @@ export const books = [
   {
     name: "القوى الكونية",
     link: "alqwaAlKawnia",
-    rl: "http://taqimusawi.com/books/33-Alqewa_Alkawneya.pdf"
+    url: "http://taqimusawi.com/books/33-Alqewa_Alkawneya.pdf"
   },
   { name: "المكتشفون العظام", link: "alMoktashifonAletham", url: "" },
   {
     name: "هكذا تكلم الله على لسان داود",
     link: "hakathaTakalamAllah",
-    rl:
+    url:
       "http://taqimusawi.com/books/17-Hakatha_takalm_allah_ala_lesan_david.pdf"
   },
   {
     name: "بوذا ونور الملكوت",
     link: "KetabBotha",
-    rl: "http://taqimusawi.com/books/18-buddah_wa_nour_almalakout.pdf"
+    url: "http://taqimusawi.com/books/18-buddah_wa_nour_almalakout.pdf"
   },
   {
     name: "ورفعناه مكانًا عليًّا",
     link: "wRafaanah",
-    rl: "http://taqimusawi.com/books/19-Wrafaanahu_Makanaa_Aleeaa.pdf"
+    url: "http://taqimusawi.com/books/19-Wrafaanahu_Makanaa_Aleeaa.pdf"
   },
   {
     name: "هكذا تكلم جعفر الصادق عليه السلام",
     link: "hakathaTakalamJaafar",
-    rl: "http://taqimusawi.com/books/13-Hakatha_takalama_Jafar_AlSadiq.pdf"
+    url: "http://taqimusawi.com/books/13-Hakatha_takalama_Jafar_AlSadiq.pdf"
   },
   {
     name: "المباني الأساسية للطريقة الأويسية",
     link: "alMabaniAlAsyawia",
-    rl:
+    url:
       "http://taqimusawi.com/books/14-almabani_alasasyah_le_altariqah_alowisyah.pdf"
   },
   {
     name: "هكذا ناجى داود ربه",
     link: "hakthaNajiDawod",
-    rl: "http://taqimusawi.com/books/16-Hakatha_Naja_David-Rabahou.pdf"
+    url: "http://taqimusawi.com/books/16-Hakatha_Naja_David-Rabahou.pdf"
   },
   {
     name: "وحدة الإرادة في الوجود",
     link: "wehdatAlErada",
-    rl: "http://taqimusawi.com/books/08-we7dah_alwojood.pdf"
+    url: "http://taqimusawi.com/books/08-we7dah_alwojood.pdf"
   },
   {
     name: "Cosmos Revealing Unified Will",
     link: "cosmos",
-    rl: "http://taqimusawi.com/books/05-Cosmos_Revealing_Unified_Will.rar"
+    url: "http://taqimusawi.com/books/05-Cosmos_Revealing_Unified_Will.rar"
   },
   {
     name: "هكذا تكلم عيسى عليه السلام",
     link: "hakathaTakalamEsa",
-    rl: "http://taqimusawi.com/books/12-hakatha_takalma_easa.pdf"
+    url: "http://taqimusawi.com/books/12-hakatha_takalma_easa.pdf"
   },
   {
     name: "قدوة العارفين",
     link: "qdwatAlArefin",
-    rl: "http://taqimusawi.com/books/09-qudwah_alfoqha2_ara.pdf"
+    url: "http://taqimusawi.com/books/09-qudwah_alfoqha2_ara.pdf"
   },
   {
     name: "قدوة الفقهاء والعارفين",
     link: "qdwatAlFoqahaa",
-    rl: "http://taqimusawi.com/books/02-qudwah_al3arfeen.rar"
+    url: "http://taqimusawi.com/books/02-qudwah_al3arfeen.rar"
   },
   {
     name: "ما هو سر الحياة",
     link: "maHowaSer",
-    rl: "http://taqimusawi.com/books/04-ma_howa_ser_al7ayat.rar"
+    url: "http://taqimusawi.com/books/04-ma_howa_ser_al7ayat.rar"
   },
   {
     name: "ألف باء العرفان",
     link: "alfBaa",
-    rl: "http://taqimusawi.com/books/01-alfba2.rar"
+    url: "http://taqimusawi.com/books/01-alfba2.rar"
   },
   {
     name: "خمسة من العرفاء",
     link: "khamsa",
-    rl: "http://taqimusawi.com/books/06-khamsah_mn_al3orafa2v2.pdf"
+    url: "http://taqimusawi.com/books/06-khamsah_mn_al3orafa2v2.pdf"
   },
   {
     name: "العلاجات الطبيعية في الأعشاب السحرية",
     link: "alelajAltabiee",
-    rl: "http://taqimusawi.com/books/10-al2a3shab.pdf"
+    url: "http://taqimusawi.com/books/10-al2a3shab.pdf"
   },
   { name: "قدوة العارفين بالفارسي", link: "qdwatAlArefin", url: "" },
   { name: "قدوة الفقهاء والعارفين – فارسي", link: "qdwatAlFoqahaa", url: "" },
   {
     name: "السموات السبع",
     link: "alsamawat",
-    rl: "http://taqimusawi.com/books/03-alsamawat_alsab3.rar"
+    url: "http://taqimusawi.com/books/03-alsamawat_alsab3.rar"
   }
 ];
 export const parts = [
   {
     name: "آروسطو",
-    art: "1",
-    ook: "alMoktashifonAletham",
-    rl: "http://taqimusawi.com/books/Moktashefon/Aristotle.pdf"
+    part: "1",
+    book: "alMoktashifonAletham",
+    url: "http://taqimusawi.com/books/Moktashefon/Aristotle.pdf"
   },
   {
     name: "الإمام جعفر الصادق عليه السلام",
-    art: "2",
-    ook: "alMoktashifonAletham",
-    rl: "http://taqimusawi.com/books/Moktashefon/Imam_Jafar_AlSadiq.pdf"
+    part: "2",
+    book: "alMoktashifonAletham",
+    url: "http://taqimusawi.com/books/Moktashefon/Imam_Jafar_AlSadiq.pdf"
   },
   {
     name: "الإمام علي بن أبي طالب عليه السلام",
-    art: "3",
-    ook: "alMoktashifonAletham",
-    rl: "http://taqimusawi.com/books/Moktashefon/Imam_Ali.pdf"
+    part: "3",
+    book: "alMoktashifonAletham",
+    url: "http://taqimusawi.com/books/Moktashefon/Imam_Ali.pdf"
   },
   {
     name: "سقراط",
-    art: "4",
-    ook: "alMoktashifonAletham",
-    rl: "http://taqimusawi.com/books/Moktashefon/Socrates.pdf"
+    part: "4",
+    book: "alMoktashifonAletham",
+    url: "http://taqimusawi.com/books/Moktashefon/Socrates.pdf"
   },
   {
     name: "أفلاطون",
-    art: "5",
-    ook: "alMoktashifonAletham",
-    rl: "http://taqimusawi.com/books/Moktashefon/Plato.pdf"
+    part: "5",
+    book: "alMoktashifonAletham",
+    url: "http://taqimusawi.com/books/Moktashefon/Plato.pdf"
   },
   {
     name: "نصير الدين الطوسي و ابن الشاطر الدمشقي",
-    art: "6",
-    ook: "alMoktashifonAletham",
-    rl:
+    part: "6",
+    book: "alMoktashifonAletham",
+    url:
       "http://taqimusawi.com/books/Moktashefon/al-Tusi%20wa%20Ibn%20al-Shatir.pdf"
   },
   {
