@@ -31,14 +31,14 @@ export default function Book({ book }) {
             عدد الأجزاء <span>{partsCount}</span>
           </div>
           {partsCount === 1 ? (
-            <div className="downloadBook">
-              <div>حمل الكتاب</div>
-              <a href={book?.url || ""}>
+            <a href={book?.url || ""}>
+              <div className="downloadBook">
+                <div>حمل الكتاب</div>
                 <div className="icon">
                   <AiOutlineCloudDownload />
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
           ) : (
             <div>
               <List bookLink={book} bookName={bookName} />
@@ -130,11 +130,13 @@ export default function Book({ book }) {
           ${styles.flexAligncenter};
           border-radius: 0.2rem;
           padding: 0.3rem;
-          color: black;
+          background: ${styles.primaryColor};
+          border: 2px solid ${styles.primaryColor};
+          color: white;
         }
         .icon:hover {
-          background: ${styles.primaryColor};
-          color: white;
+          color: ${styles.primaryColor};
+          background: white;
         }
       `}</style>
     </>
