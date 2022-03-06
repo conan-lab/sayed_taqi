@@ -32,7 +32,7 @@ export default function Book({ book }) {
             عدد الأجزاء <span>{partsCount}</span>
           </div>
           {partsCount === 1 ? (
-            <a href={bookUrl || ""}>
+            <a href={`${bookUrl}`}>
               <div className="downloadBook">
                 <div>حمل الكتاب</div>
                 <div className="icon">
@@ -111,9 +111,8 @@ export default function Book({ book }) {
           padding: 2rem;
         }
         .downloadBook {
-          background: white;
+          background: ${styles.primaryColor};
           width: clamp(10rem, 50vw, 16rem);
-          border: 1px solid gray;
           padding: 0.3rem 1rem;
           border-radius: 0.3rem;
           ${styles.flex};
@@ -121,7 +120,7 @@ export default function Book({ book }) {
           ${styles.flexAligncenter};
           font-size: 1.2rem;
           gap: 0.6rem;
-          border-left: 3px solid ${styles.primaryColor};
+          color: white;
         }
         .icon {
           font-size: 1.2rem;
