@@ -7,9 +7,11 @@ import { useState, useEffect } from "react";
 export default function Book({ book }) {
   const [bookName, setBookName] = useState("");
   const [partsCount, setPartsCount] = useState(1);
+  const [bookUrl, setBookUrl] = useState("");
 
   useEffect(() => {
     setBookName(books.filter((cbook) => cbook.link === book)[0]?.name);
+    setBookUrl(books.filter((cbook) => cbook.link === book)[0]?.url);
     setPartsCount(parts.filter((part) => part.book === book).length || 1);
   }, [book]);
 
@@ -25,13 +27,12 @@ export default function Book({ book }) {
             <div>{bookName}</div>
           </div>
         </div>
-
         <div className="bookPartsContainer">
           <div className="bookParts">
             عدد الأجزاء <span>{partsCount}</span>
           </div>
           {partsCount === 1 ? (
-            <a href={book?.url || ""}>
+            <a href={bookUrl || ""}>
               <div className="downloadBook">
                 <div>حمل الكتاب</div>
                 <div className="icon">
